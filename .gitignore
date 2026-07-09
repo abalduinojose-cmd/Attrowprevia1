@@ -1,0 +1,11 @@
+# Dependências (reinstale com: npm install)
+node_modules/
+
+# Build de produção (gere com: npm run build)
+dist/
+
+# Logs e arquivos locais
+npm-debug.log*
+*.local
+.DS_Store
+Thumbs.db
