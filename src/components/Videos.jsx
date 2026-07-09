@@ -2,10 +2,12 @@ import { useRef, useState } from "react";
 import Reveal from "./Reveal.jsx";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "../lib/constants.js";
 
+const BASE = import.meta.env.BASE_URL;
+
 const VIDEOS = [
-  { src: "/videos/attrow-video-1.mp4", label: "Attrow na prática" },
-  { src: "/videos/attrow-video-2.mp4", label: "Por dentro da Attrow" },
-  { src: "/videos/attrow-video-3.mp4", label: "Contabilidade estratégica" },
+  { src: `${BASE}videos/attrow-video-1.mp4`, label: "Attrow na prática" },
+  { src: `${BASE}videos/attrow-video-2.mp4`, label: "Por dentro da Attrow" },
+  { src: `${BASE}videos/attrow-video-3.mp4`, label: "Contabilidade estratégica" },
 ];
 
 function VideoCard({ video, index, playing, onPlay }) {
